@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="旅行行程">
+  <title>旅行行程</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">TRAVEL ITINERARY</p>
+    <h1 id="trip-title">旅行行程</h1>
+    <p id="trip-dates"></p>
+    <div id="route" class="route" aria-label="总路线"></div>
+  </header>
+  <main>
+    <section class="toolbar"><a id="route-link" target="_blank" rel="noreferrer">查看总路线</a><button type="button" onclick="window.print()">打印行程</button></section>
+    <section><div class="section-title"><p>DAILY PLAN</p><h2>每日行程</h2></div><div id="days" class="days"></div></section>
+    <section id="stays-section"><div class="section-title"><p>STAYS</p><h2>住宿</h2></div><div id="stays" class="stays"></div></section>
+    <section id="checklist-section"><div class="section-title"><p>BEFORE DEPARTURE</p><h2>出发清单</h2></div><div id="checklist" class="checklist"></div></section>
+  </main>
+  <footer>行程可能随天气、交通及现场安排调整</footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+interface:
+  display_name: 旅行网页生成器
+  short_description: 把旅行资料整理成安全可分享的网页压缩包与成品PDF
+  brand_color: '#1F6B5C'
+  default_prompt: 使用 $travel-itinerary-publisher 把我的旅行资料整理成可分享的网页压缩包和成品PDF行程。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
